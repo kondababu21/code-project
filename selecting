@@ -1,0 +1,25 @@
+import pandas as pd 
+import numpy as np 
+# Sample DataFrame 
+data = { 
+"name": ["A", "B", "C", "D"], 
+"score": [10, 20, 30, 40], 
+"age": [15, 16, 17, 18] 
+} 
+df = pd.DataFrame(data, index=["a", "b", "c", 
+"d"]) 
+# Select single column 
+print("\nSelecting 'score' column:") 
+print(df["score"]) 
+# Select multiple columns 
+print("\nSelecting 'name' and 'age' columns:") 
+print(df[["name", "age"]]) 
+# Select row using label 
+print("\nSelect row 'c' using loc:") 
+print(df.loc["c"]) 
+# Select row using position 
+print("\nSelect row at index 2 using iloc:") 
+print(df.iloc[2]) 
+# Select specific cell (row 'd', column 'score') 
+print("\nSelect score of 'd':") 
+print(df.loc["d", "score"])
