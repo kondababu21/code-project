@@ -1,0 +1,5 @@
+angles = np.array([0, np.pi/2, np.pi]) 
+print("Sine:", np.sin(angles)) 
+print("Cosine:", np.cos(angles)) 
+print("Exponential:", np.exp([1, 2, 3])) 
+print("Square root:", np.sqrt([1, 4, 9, 16])) 
