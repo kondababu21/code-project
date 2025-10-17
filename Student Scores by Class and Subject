@@ -1,0 +1,16 @@
+import pandas as pd 
+import numpy as np 
+# Create a MultiIndex 
+arrays = [ 
+['Class A', 'Class A', 'Class A', 'Class B', 
+'Class B', 'Class B'], 
+['Math', 'Science', 'English', 'Math', 
+'Science', 'English'] 
+] 
+multi_index = pd.MultiIndex.from_arrays(arrays, 
+names=('Class', 'Subject')) 
+# Create DataFrame with hierarchical index 
+data = [85, 90, 78, 88, 92, 80] 
+df = pd.DataFrame(data, index=multi_index, 
+columns=['Score']) 
+print(df)
