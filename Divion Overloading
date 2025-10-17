@@ -1,0 +1,11 @@
+class Distance:
+    def __init__(self, meters):
+        self.meters = meters
+
+    def __truediv__(self, other):
+        return self.meters / other.meters
+
+# Test
+d1 = Distance(100)
+d2 = Distance(20)
+print("Division Result:", d1 / d2)
