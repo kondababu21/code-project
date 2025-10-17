@@ -1,0 +1,15 @@
+class Book:
+    def __init__(self, title, author):
+        self.title = title
+        self.author = author
+
+    def __str__(self):   # user-friendly
+        return f"Book: {self.title} by {self.author}"
+
+    def __repr__(self):  # developer/debug
+        return f"Book('{self.title}', '{self.author}')"
+
+# Test
+b1 = Book("Python Basics", "Guido")
+print("Using print():", b1)      # calls __str__
+print("Using repr():", repr(b1)) # calls __repr__
