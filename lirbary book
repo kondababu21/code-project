@@ -1,0 +1,20 @@
+class Book: 
+def __init__(self, title, author, available=True): 
+self.title = title 
+self.author = author 
+self.available = available 
+def borrow(self): 
+if self.available: 
+self.available = False 
+print(f"You borrowed '{self.title}' by {self.author}") 
+else: 
+print("Sorry, this book is already borrowed!") 
+def return_book(self): 
+self.available = True 
+print(f"You returned '{self.title}'") 
+# Objects 
+b1 = Book("Python Basics", "Guido") 
+b2 = Book("Machine Learning", "Andrew Ng") 
+b1.borrow() 
+b1.borrow()  # borrowing again not possible 
+b1.return_book()
