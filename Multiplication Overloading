@@ -1,0 +1,12 @@
+class Matrix:
+    def __init__(self, a, b):
+        self.a = a
+        self.b = b
+
+    def __mul__(self, other):
+        return self.a * other.a + self.b * other.b
+
+# Test
+m1 = Matrix(1, 2)
+m2 = Matrix(3, 4)
+print("Multiplication Result:", m1 * m2)
