@@ -1,0 +1,9 @@
+# Create Series with custom index 
+s2 = pd.Series([100, 200, 300], index=["a", "b", 
+"c"]) 
+ 
+print("Custom Index Series:") 
+print(s2) 
+ 
+print("\nIndex object:") 
+print(s2.index)
