@@ -1,0 +1,20 @@
+import numpy as np 
+ 
+arr = np.array([10, 20, 30, 40, 50]) 
+ 
+# Filtering (find values > 25) 
+print(arr[arr > 25])     # [30 40 50] 
+ 
+# Sorting 
+print(np.sort(arr))      # [10 20 30 40 50] 
+ 
+# Reshaping 
+arr2 = np.array([[1,2,3],[4,5,6]]) 
+print(arr2.reshape(3,2))  
+# [[1 2] 
+#  [3 4] 
+#  [5 6]] 
+ 
+# Aggregation 
+print(np.sum(arr))       # 150 
+print(np.mean(arr))      # 30.0
