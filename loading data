@@ -1,0 +1,12 @@
+import pandas as pd 
+# Load from CSV 
+df = pd.read_csv("data.csv") 
+# Load from Dictionary (example dataset) 
+data = { 
+'Name': ['Alice', 'Bob', 'Charlie', 'David', 
+'Edward'], 
+'Age': [25, 30, None, 40, 35], 
+'Score': [85, 90, 95, None, 70] 
+} 
+df = pd.DataFrame(data) 
+print(df)
