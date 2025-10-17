@@ -1,0 +1,16 @@
+data = { 
+    "Name": ["John", "Alice", "Bob"], 
+    "Age": [25, 30, 22] 
+} 
+ 
+df = pd.DataFrame(data, index=["id1", "id2", 
+"id3"]) 
+ 
+print("DataFrame:") 
+print(df) 
+ 
+print("\nRow Index:") 
+print(df.index) 
+ 
+print("\nColumn Index:") 
+print(df.columns)
