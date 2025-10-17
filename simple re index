@@ -1,0 +1,9 @@
+import pandas as pd 
+# Series with custom index 
+s = pd.Series([10, 20, 30],index=['a', 'b','c']) 
+print("Original Series:") 
+print(s) 
+# Reindex with different order 
+s2 = s.reindex(['c', 'a', 'b']) 
+print("\nReindexed Series:") 
+print(s2) 
