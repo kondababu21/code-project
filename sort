@@ -1,0 +1,12 @@
+df = pd.DataFrame({ 
+"Name": ["John", "Alice", "Bob"], 
+"Score": [85, 95, 75] 
+}, index=["id3", "id1", "id2"]) 
+print("Original DataFrame:") 
+print(df) 
+# Sort by index 
+print("\nSort by index:") 
+print(df.sort_index()) 
+# Sort by column values 
+print("\nSort by 'Score':") 
+print(df.sort_values(by="Score")) 
