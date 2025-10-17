@@ -1,0 +1,17 @@
+class Student: 
+    def __init__(self, roll_no, name, marks): 
+        self.roll_no = roll_no 
+        self.name = name 
+        self.marks = marks 
+     
+    def display_info(self): 
+        print(f"Roll No: {self.roll_no}, Name: {self.name}, Marks: 
+{self.marks}") 
+ 
+# Create objects 
+s1 = Student(101, "Rahul", 85) 
+s2 = Student(102, "Anita", 92) 
+ 
+# Retrieve data 
+s1.display_info() 
+s2.display_info()
