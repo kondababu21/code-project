@@ -1,0 +1,10 @@
+import pandas as pd 
+ 
+# Create a Series with default index 
+s = pd.Series([100, 200, 300, 400]) 
+ 
+print("Series:") 
+print(s) 
+ 
+print("\nIndex object:") 
+print(s.index) 
