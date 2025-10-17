@@ -1,0 +1,15 @@
+class Point:
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+
+    def __neg__(self):  # unary minus
+        return Point(-self.x, -self.y)
+
+    def __str__(self):
+        return f"({self.x}, {self.y})"
+
+# Test
+p1 = Point(3, -4)
+print("Original:", p1)
+print("After -p1:", -p1)
